@@ -6,6 +6,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { FeedModule } from './feed/feed.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { FeedModule } from './feed/feed.module';
       inject: [ConfigService],
     }),
     FeedModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

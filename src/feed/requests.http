@@ -1,9 +1,10 @@
-### Create a new post
+### Create a new post (get a new token)
 POST  http://localhost:3000/api/feed
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJmaXJzdE5hbWUiOiJVbmNsZSIsImxhc3ROYW1lIjoiQm9iIiwiZW1haWwiOiJ1bmNsZWJvYkBlbWFpbC5jb20iLCJyb2xlIjoidXNlciJ9LCJpYXQiOjE2NzkwMDQ3NjYsImV4cCI6MTY3OTAwODM2Nn0.8Vzr8AMGdWsVPNCdyilUiNi2FRR66p-ykg87dXdprv8
 Content-Type: application/json
 
 {
-  "body": "Be a body 11"
+  "body": "Be a body 25"
 }
 
 ### Create a new post
@@ -14,8 +15,8 @@ Content-Type: application/json
   "body": "Don't be a body"
 }
 
-### Pagination testing
-GET http://localhost:3000/api/feed?take=20&skip=2
+### Pagination testing (take 20, skip 0)
+GET http://localhost:3000/api/feed?take=20&skip=0
 
 ### Update post
 PUT http://localhost:3000/api/feed/1
